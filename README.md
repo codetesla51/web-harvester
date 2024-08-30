@@ -14,8 +14,7 @@
    ```bash
    git clone https://github.com/codetesla51/web-harvester.git
    cd webclone
-
-   1. **Check it out**
+**check it out**
    ```bash
    https://uthmanev.atwebpages.com/
    
