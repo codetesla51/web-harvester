@@ -1,0 +1,100 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: rg;
+  font-weight: 400;
+}
+:root{
+  --bg:#f7f7f7;
+  --mc:#0a0a0a;
+  --tc:#0a0a0a;
+  --sbc:#f7f7f7;
+}
+
+@font-face{
+  font-family:rg;
+  src:url(EuclidCircularAMedium.ttf)
+}
+@font-face{
+  font-family:bd;
+  src:url(EuclidCircularABold.ttf)
+}
+.form{
+  display: flex;
+  align-items: center;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
+  flex-direction: column;
+  padding: 600px 5%;
+  
+}
+.input_field input{
+  width: 450px;
+  height: 50px;
+  border-radius:8px;
+  border: none;
+  background: var(--sbc);
+  padding: 0 30px 0 40px;
+  outline: none;
+}
+.form .log{
+  width: 300px;
+  height:40px;
+  background: var(--mc);
+  border:none;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.header{
+  padding: .3em .5em;
+}
+.header h2{
+  font-family: bd;
+  font-size: 2em;
+  text-transform: capitalize;
+}
+.header p{
+  margin-top: .5em;
+}
+
+.input_field{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+label{
+  padding: .7em .5em;
+  text-transform: capitalize;
+}
+
+#message{
+  background: var(--bg);
+  position: fixed;
+  top: 50%;
+  width: 250px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 1em;
+  border-radius: 8px;
+  text-align: center;
+      box-shadow: 0 4px 30px rgb(0,0,0,0.1);?
+}
+
+  @media only screen and (max-width: 768px) {
+.input_field input{
+  width: 300px;
+}
+.form{
+  padding: 100px 2%;
+}
+.input_field{
+  align-items: flex-start;
+}
+  }
